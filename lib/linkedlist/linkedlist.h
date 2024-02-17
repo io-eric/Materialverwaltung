@@ -1,8 +1,8 @@
 /*
  Belegarbeit:
-    > Name: Eric Wolf
-    > Matr.-Nr.: 53453
-    > Bibl.-Nr.: 85876
+    > Name: Eric ....
+    > Matr.-Nr.: .....
+    > Bibl.-Nr.: .....
 */
 
 #ifndef LINKEDLIST_H
