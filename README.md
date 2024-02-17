@@ -3,6 +3,8 @@
 ### Description
 This project implements a CGI web application for managing materials. The application allows users to add, edit, search, and delete records, where each record includes the article name, article number, and stock level.
 
+[PREVIEW](https://github.com/EricSource-io/Materialverwaltung/blob/main/preview.png)
+
 ## Compilation:
 
 #### Command Line:
