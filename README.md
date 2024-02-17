@@ -22,7 +22,7 @@ gcc lib/utils/utils.c lib/linkedlist/linkedlist.c lib/database/database.c main.c
 - Stock levels can be modified through a separate menu item (e.g., "Inbound"/"Outbound"/"Goods Receipt").
 
 ## Task Statement:
-The complete task statement for this CGI web application is available on the [university's website](https://www2.htw-dresden.de/~beck/PSPI/Belegaufgaben).
+The complete task statement for this CGI web application is available on the [university's website](https://www2.htw-dresden.de/~beck/PSPI/Belegaufgaben/PspCB2.html).
 
 ## Technologies:
 - The application is implemented in C++.
@@ -33,5 +33,5 @@ The complete task statement for this CGI web application is available on the [un
 2. Integrate stock level modifications through the separate menu item.
 
 ## Used Resources:
-- [University's Website - Assignment Details](https://www2.htw-dresden.de/~beck/PSPI/Belegaufgaben)
+- [University's Website - Assignment Details](https://www2.htw-dresden.de/~beck/PSPI/Belegaufgaben/PspCB2.html)
 
