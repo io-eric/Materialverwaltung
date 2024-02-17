@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>💾 Materialverwaltung</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="public/styles.css">
+</head>
+
+<body>
+    <div style="float: right">
+        <h4>* Belegarbeit</h4>
+        <h4>* Name: Eric ....</h4>
+        <h4>* Matr.-Nr.: .....</h4>
+        <h4>* Bibl.-Nr.: .....</h4>
+    </div>
+    <h1> 💾 - Materialverwaltung</h1>
+
+    <form action="beleg.cgi" method="post" id="article-create-form">
+
+    </form>
+    <dialog id="error-dialog" class="dialog">
+        <form method="dialog">
+            <button class="cancel-button">Verstanden!</button>
+        </form>
+    </dialog>
+    <dialog id="article-edit-dialog" class="dialog">
+        <form method="dialog">
+            <button class="cancel-button">Abbrechen</button>
+        </form>
+    </dialog>
+    <div class="article-table">
+        <form action="beleg.cgi" method="post" class="table-search">
+            <input type="hidden" name="type" value="article_search" />
+            <input type="text" id="table-search" name="search_query" placeholder="Bezeichnung,  Artikelnummer, ..." />
+            <button type="submit">Suchen</button>
+        </form>
+        <form action="beleg.cgi" method="post" class="">
+
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Artikelbezeichnung</th>
+                    <th>Artikelnummer</th>
+                    <th>Lagerbestand</th>
+                    <th>Aktionen</th>
+                </tr>
+            <tbody id="article-tbody">
+            </tbody>
+        </table>
+    </div>
+    <br />
+    <br />
+    <h3>Aufgabe 2, CGI-Webanwendung</h3>
+    <p>Haben sich die Daten beim Programmlauf verändert, so sind sie beim Verlassen des Programms zu
+        speichern. Das
+        Programm erlaube in jedem Fall das Erfassen, Löschen, Suchen und Anzeigen der Datensätze, sowie
+        eine sortierte
+        tabellarische Auflistung der Daten.</p>
+    <h5><a
+            href="https://www2.htw-dresden.de/~beck/PSPI/Belegaufgaben">https://www2.htw-dresden.de/~beck/PSPI/Belegaufgaben</a>
+    </h5>
+    <p>Programmieren Sie eine Materialverwaltung.
+        Das Programm soll Datensätze, die Artikelbezeichnung, Artikelnummer und Lagerbestand speichern,
+        verwalten. Der
+        Lagerbestand soll dabei über einen gesonderten Menuepunkt (zB.
+        "Zugang"/"Abgang"/Wareneingang"....) veränderbar
+        sein.
+    </p>
+    <script>
+        // Prevents resubmission of forms
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg: #f7f7f7;
+    --primary: #19bd89;
+    --blue: #109CF1;
+    --red: #ff3240;
+    --gray: #696969;
+    --font-family: 'poppins', sans-serif;
+    --box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+    background-color: #38374436;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0d0d104a;
+    opacity: 0 .6;
+    border-radius: 5px;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg);
+    padding: 10px 20px;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    color: #1F2C38;
+    margin: 0;
+}
+
+p {
+    color: #2C3C4B;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: transparent;
+    font-family: var(--font-family);
+    color: #fff;
+    background-color: var(--primary);
+    transition: transform .2s cubic-bezier(0.47, -0.34, 0, 1.94) 0s;
+}
+
+button:hover {
+    transform: scale(1.04);
+}
+
+input {
+    padding: 0 12px;
+    border-radius: 5px;
+    border: transparent;
+    font-family: var(--font-family);
+    font-weight: 00;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    vertical-align: sub;
+    background-color: var(--bg);
+}
+
+#article-create-form {
+    position: relative;
+    height: 240px;
+    width: 400px;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+}
+
+#article-create-form .submit-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.form-header {
+    margin-bottom: 20px;
+}
+
+#article-create-form input {
+    height: 30px;
+    width: 180px;
+    float: right;
+}
+
+.dialog {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.454);
+    animation: fade-in-opacity .25s;
+
+}
+
+.dialog div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 15px;
+    width: 450px;
+    border-radius: 5px;
+    background-color: #fff;
+    animation: fade-in-scale .25s;
+}
+
+.dialog input {
+    height: 30px;
+    width: 180px;
+    float: right;
+}
+
+.dialog .submit-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.dialog .cancel-button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#error-dialog div {
+    height: 190px;
+}
+
+#article-edit-dialog div {
+    height: 400px;
+}
+
+.article-table {
+    max-width: 1450px;
+}
+
+.table-search {
+    display: inline-flex;
+    height: 45px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.table-search input {
+    height: 100%;
+    width: 300px;
+    font-size: 16px;
+    box-shadow: var(--box-shadow);
+    border: none;
+    background-color: #fff;
+}
+
+.table-search button {
+    height: 100%;
+    width: 100px;
+    margin-left: 8px;
+    box-shadow: var(--box-shadow);
+    font-weight: 600;
+}
+
+.article-table table {
+    margin-top: 12px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.article-table table th {
+    height: 48px;
+    font-weight: 500;
+    text-align: left;
+    color: #334d6e7d;
+}
+
+.article-table table th,
+td {
+    padding: 0 80px;
+    border-bottom: #EBEFF2 1px solid;
+}
+.article-table table tr:nth-child(n+2) {
+    height: 60px;
+}
+
+.article-table table tr:last-child>td {
+
+    border-bottom: none;
+}
+
+.article-table table th,
+td {
+    padding: 0 80px;
+    border-bottom: #EBEFF2 1px solid;
+}
+
+.article-table table th:nth-child(n+2),
+td:nth-child(n+2) {
+    text-align: center;
+}
+
+.article-table table td:nth-child(n+2) {
+    text-align: center;
+    font-weight: 400;
+    color: #707683;
+}
+
+
+.empty-table-td {
+    text-align: center;
+    height: 150px;
+    font-weight: 500;
+    color: #102a4b9e;
+}
+
+.edit-button-form {
+    display: flex;
+}
+.edit-button {
+    height: 25px;
+    background-color: var(--blue);
+}
+
+.edit-button:hover {
+    background-color: var(--primary);
+}
+
+.delete-button{
+    height: 25px;
+    background-color: var(--gray);
+}
+
+.delete-button:hover{
+    background-color: var(--red);
+}
+.edit-dialog {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #1F2C38;
+}
+
+.cancel-button,
+.submit-button {
+    width: 150px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 13px;
+    margin: 12px;
+}
+
+.cancel-button {
+    background-color: transparent;
+    border: solid var(--gray) 2px;
+    color: var(--gray);
+}
+
+.cancel-button:hover {
+    background-color: var(--gray);
+    color: white;
+}
+
+@keyframes fade-in-opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-scale {
+    from {
+        scale: .75;
+    }
+
+    to {
+        scale: 1;
+    }
+}
