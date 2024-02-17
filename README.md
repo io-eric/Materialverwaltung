@@ -9,29 +9,29 @@ This project implements a CGI web application for managing materials. The applic
 ```bash
 gcc lib/utils/utils.c lib/linkedlist/linkedlist.c lib/database/database.c main.c -o beleg.cgi
 ```
-### Functionalities
+## Functionalities
 - **Add Article:** Users can add new articles with article name, article number, and stock level.
 - **Edit Article:** Ability to edit existing records.
 - **Search Article:** Search records based on article name, article number, or stock level.
 - **Delete Article:** Delete records from the material management system.
 
-### Data Storage
+## Data Storage
 - The data is saved when exiting the program if the data has changed during program execution.
 
-### Stock Level Modification
+## Stock Level Modification
 - Stock levels can be modified through a separate menu item (e.g., "Inbound"/"Outbound"/"Goods Receipt").
 
-### Task Statement
+## Task Statement
 The complete task statement for this CGI web application is available on the [university's website](https://www2.htw-dresden.de/~beck/PSPI/Belegaufgaben).
 
-### Technologies
+## Technologies
 - The application is implemented in C++.
 - Use of CGI technology for the web application.
 
-### Procedure
+## Procedure
 1. Implement functionalities for adding, deleting, searching, and displaying records.
 2. Integrate stock level modifications through the separate menu item.
 
-### Used Resources
+## Used Resources
 - [University's Website - Assignment Details](https://www2.htw-dresden.de/~beck/PSPI/Belegaufgaben)
 
