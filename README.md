@@ -8,7 +8,7 @@ This project implements a CGI web application for managing materials. The applic
 ### Command Line:
 ```bash
 gcc lib/utils/utils.c lib/linkedlist/linkedlist.c lib/database/database.c main.c -o beleg.cgi
-
+```
 ### Functionalities
 - **Add Article:** Users can add new articles with article name, article number, and stock level.
 - **Edit Article:** Ability to edit existing records.
