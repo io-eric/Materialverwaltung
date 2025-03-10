@@ -27,7 +27,7 @@ gcc lib/utils/utils.c lib/linkedlist/linkedlist.c lib/database/database.c main.c
 The complete task statement for this CGI web application is available on the [university's website](https://www2.htw-dresden.de/~beck/PSPI/Belegaufgaben/PspCB2.html).
 
 ## Technologies:
-- The application is implemented in C++.
+- The application is implemented in C.
 - Use of CGI technology for the web application.
 
 ## Procedure:
